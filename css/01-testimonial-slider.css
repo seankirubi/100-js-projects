@@ -1,0 +1,51 @@
+body{
+  margin: 0px;
+}
+.container{
+  border: 1px solid;
+  margin: 0px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box{
+  background-color: slateblue;
+  color: white;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  height: 240px;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 2px 20px  rgb(71, 71, 71);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.profile-container{
+  background-size: cover;
+  background-position: -3px -140px;
+  transform: translateY(-145px);
+  height:130px;
+  width: 130px;
+  background-color: rgb(192, 190, 186);
+  border-radius: 70px;
+  position: absolute;
+}
+
+.profile{
+  height:130px;
+  width: 130px;
+  border-radius: 70px;
+}
+
+.name{
+  position: absolute;
+  transform: translate(-210px, 90px);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
