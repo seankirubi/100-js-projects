@@ -4,13 +4,13 @@ const buttonElement = document.querySelector ('.js-btn');
 
 
 
-buttonElement.addEventListener('click', (event) => {
-  let total = '';
- const totalValue = Number(billElement.value) + Number(tipElement.value);
- total = totalValue.toFixed(2);
- document.querySelector('.js-totalPrice').innerText = total
-})
+buttonElement.addEventListener('click', calculateTip)
 
-
+function calculateTip(){
+  const bilValue = Number(billElement.value);
+  const tipValue = Number(tipElement.value);
+  const totalValue =  bilValue + (bilValue * (tipValue / 100)) 
+  document.querySelector('.js-totalPrice').innerText = totalValue.toFixed(2);
+}
 
 
