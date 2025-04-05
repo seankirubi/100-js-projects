@@ -1,0 +1,29 @@
+body{
+  border: 1px solid;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.container{
+  border: 2px solid;
+  height: 250px;
+  width: 250px;
+  display: flex;
+  
+}
+.Item{
+  border: 1px solid red;
+  border-radius: 3px;
+  background-color: rgb(246, 127, 147);
+  color: white;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  font-size: small;
+}
+.Item-1{
+ flex: 1;
+}
+
