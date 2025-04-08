@@ -26,4 +26,8 @@ body{
 .Item-1{
  flex: 1;
 }
+.btn{
+  align-self: center;
+  
+}
 

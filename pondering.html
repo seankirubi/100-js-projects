@@ -11,7 +11,20 @@
     <div class="Item Item-1">Item-1</div>
     <div class="Item Item-2">Item-2</div>
     <div class="Item Item-3">Item-3</div>
+    <button class="btn">click me</button>
+
   </div>
+  
+
+  <script>
+    const btnEl = document.querySelector('.btn')
+    btnEl.addEventListener('click', () => {
+      const randomNo = Math.random()
+      const no = 6;
+      const fin = Math.floor(randomNo * no) + 1
+      console.log(randomNo+ ' * ' +no+ ' = ' +fin)
+    })
+  </script>
   
 </body>
 </html>
