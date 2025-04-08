@@ -10,6 +10,21 @@ let timeoutId;
 function rollDice(){
   const rollResult = Math.floor(Math.random() * 6) + 1
   const diceFace = getDiceFace(rollResult);
+  diceEl.innerHTML = diceFace;
+  historyList.push(rollResult);
+  
+  updateRollHistory();
+}
+
+function updateRollHistory(){
+  rollHistoryEl.innerHTML = "";
+  for(let i = 0; i < historyList.length; i++){
+    const listEl = document.createElement('li');
+    listEl.innerHTML = `Roll ${i + 1}: <span>${getDiceFace(historyList[i])}</span>`
+
+    rollHistoryEl.appendChild(listEl)
+  }
+ 
 }
 
 function getDiceFace(rollResult){
@@ -28,8 +43,6 @@ function getDiceFace(rollResult){
     return "?#9861;";
     default:
       return "";
-
-
   }
 }
 
