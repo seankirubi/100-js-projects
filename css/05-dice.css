@@ -1,0 +1,68 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, sans-serif;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1, .dice{
+  text-align: center;
+}
+h1{
+  margin: 32px 0px;
+  font-size: 48px;
+}
+.dice{
+  margin: 5px;
+  font-size: 112px;
+}
+button{
+  padding: 16px 32px;
+  font-size: 24px;
+  background-color: rgb(0, 166, 255);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+button:hover{
+  background-color: rgba(1, 138, 212, 0.999);
+}
+.roll{
+  width: auto;
+  min-width: 550px;
+  margin: 8px;
+  padding: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.145);
+  border-radius: 10px;
+  background-color: rgb(240, 240, 240);
+}
+
+.diceHist{
+  font-size: 48px;
+  margin: 0px;
+  margin-right: 16px;
+}
+.histText{
+  margin: 0px;
+  font-size: 24px;
+}
+
+.animateDice{
+  animation: rotate 1s  forwards;
+}
+
+@keyframes rotate {
+  from {transform: rotateX(0deg) rotateY(0deg);}
+  to{transform: rotateX(720deg) rotateY(720deg);
+ }
+}
