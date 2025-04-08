@@ -44,8 +44,11 @@ ul {
   padding: 0;
   max-width: 600px;
   margin: 2rem auto;
-  border: 2px solid #cfcfcf;
   border-radius: 1rem;
+}
+
+.ul-border{
+  border: 2px solid #cfcfcf;
 }
 
 li {
