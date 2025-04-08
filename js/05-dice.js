@@ -1,5 +1,5 @@
-const btnEl = document.querySelector('.btn');
-const diceEl = document.querySelector('.js-dice');
+const btnEl = document.getElementById('.btn');
+const diceEl = document.getElementById('dice');
 let diceGotten = '';
 let i = 0;
 let timeoutId;
