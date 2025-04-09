@@ -1,7 +1,56 @@
+body{
+  font-family: Roboto, sans-serif;
+}
 
 .container{
   margin: 0px auto;
   max-width: 400px;
   height: 350px;
-  border: 1px solid;
+  border: 3px solid rgb(222, 222, 222);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.title{
+  font-size: 2.3rem;
+  margin: 1.5rem 0px 10px;
+}
+
+.timer{
+  font-size: 4.5rem;
+}
+
+button{
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+}
+
+.start{
+  background-color: rgba(2, 166, 2, 0.754);
+  transition: background-color 0.3s ease;
+}
+.start:hover{
+  background-color: rgb(162, 208, 162);
+}
+
+
+.stop{
+  background-color: rgba(255, 0, 0, 0.702);
+  transition: background-color 0.3s ease;
+}
+.stop:hover{
+  background-color: rgb(227, 145, 145);
+}
+
+.reset{
+  background-color: grey;
+  transition: background-color 0.3s ease;
+}
+.reset:hover{
+  background-color: rgb(183, 187, 183);
 }
