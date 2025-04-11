@@ -1,3 +1,4 @@
+
 :root{
   --rock-bg: rgba(255, 0, 0, 0.68);
   --paper-bg: rgba(0, 64, 255, 0.689);
@@ -12,7 +13,7 @@ body{
 
 h1{
   margin: 22px 0px;
-  padding-top: 100px ;
+  padding-top: 10px ;
 }
 
 p{
@@ -27,13 +28,14 @@ button{
   padding: 8px;
   font-size: 3rem;
   border-radius: 50px;
+  transition: 
+    transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out,  
+    opacity 0.2s ease-in-out;
 }
 
 .rock{
   border: 2px solid rgb(255, 6, 6);
-  background-color: var(--rock-bg);
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out,  opacity 0.2s ease-in-out;
-  
+  background-color: var(--rock-bg); 
 }
 
 .rock:hover{
@@ -49,9 +51,7 @@ button{
 
 .paper{
   border: 2px solid rgb(3, 72, 191);
-  background-color: var(--paper-bg);
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out,  opacity 0.2s ease-in-out;
-  
+  background-color: var(--paper-bg); 
 }
 
 .paper:hover{
@@ -66,9 +66,7 @@ button{
 
 .scissors{
   border: 2px solid rgb(17, 152, 2);
-  background-color: var(--scissors-bg);
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out,  opacity 0.2s ease-in-out;
-  
+  background-color: var(--scissors-bg); 
 }
 
 .scissors:hover{
@@ -79,4 +77,37 @@ button{
 
 .click-scissors{
   background-color: rgb(36, 134, 0);
+}
+
+span{
+  font-size: 3rem;
+}
+
+.compScore{
+  font-size: 2rem;
+  color: rgb(255, 0, 0);
+}
+
+.userScore{
+  font-size: 2rem;
+  color: blue;
+}
+
+.scoreContainer{
+  transform: translateX(-15px);
+  padding-bottom: 10px;
+}
+#result{
+  transform: translateX(10px);
+}
+.computer-choice{
+  font-size: 3rem;
+}
+
+.mainContainer{
+  box-shadow: 0pc 0px 10px ;
+  background-color: rgb(255, 255, 255);
+  margin: 10px auto;
+  max-width: 500px;
+  border-radius: 10px;
 }
