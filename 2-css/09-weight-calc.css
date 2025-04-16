@@ -1,0 +1,56 @@
+body{
+  margin: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #833AB4;
+  background-size: 500%;
+  background-image:linear-gradient(to top right, rgba(131, 58, 180, 1) 11%, rgba(253, 29, 29, 1) 52%, rgba(252, 176, 69, 1) 81%);
+  animation: bg-animation 5s infinite alternate;
+}
+
+@keyframes bg-animation {
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
+}
+.container{
+  padding: 20px;
+  border: 2px solid rgb(9, 9, 9);
+  background-color: rgba(255, 255, 255, 0.257);
+  border-radius: 10px;
+  box-shadow: 20px 20px rgb(0, 0, 0);
+  min-width: 450px;
+  
+}
+.input-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+label{
+  font-size: 18px;
+  font-weight: bold;
+}
+input{
+  font-size: 19px;
+  padding: 10px;
+  border-top: 2px solid rgb(128, 128, 128);
+  border-left: 2px solid rgb(147, 147, 147);
+  border-bottom: 2px solid rgb(218, 218, 218);
+  border-right: 2px solid rgb(215, 215, 215);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.325);
+  width: 315px;
+  height:22px;
+  outline: none;
+}
+input::placeholder{
+  font-size:19px;
+  opacity: 0.8;
+}
