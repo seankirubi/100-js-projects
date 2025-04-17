@@ -1,0 +1,90 @@
+body{
+  margin: 0;
+  height: 100vh;
+  font-family: monospace;
+  box-sizing: border-box;
+  background: #2A7B9B;
+ 
+}
+.gradient{
+  background: linear-gradient(39deg, rgba(42, 123, 155, 1) 13%, rgba(87, 199, 133, 1) 49%, rgba(237, 221, 83, 1) 84%);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 400%;
+  animation: bg-animation 3s infinite alternate;
+  
+}
+
+
+
+.hot{
+  background: #bd0b0b;
+  background: linear-gradient(138deg, rgba(189, 11, 11, 1) 0%, rgba(235, 152, 19, 1) 50%, rgba(255, 243, 13, 1) 100%);
+  background-size: 400%;
+  animation: bg-animation 3s infinite alternate;
+}
+
+.cold{
+  background: #020024;
+  background: linear-gradient(329deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  background-size: 400%;
+  animation: bg-animation 3s infinite alternate;
+}
+
+@keyframes bg-animation {
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
+}
+
+.main-container{
+  width: 450px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #e0e0e06b;
+  box-shadow:  4px 4px 8px #504f4f;
+  
+  position: relative;
+}
+
+.sticker img{
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  top: -50px;
+  
+ 
+  width: 100px;
+}
+
+.main-container h1{
+  font-size: 32px;
+}
+
+.temp-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.temp-container input{
+  width: 250px;
+  padding: 5px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.541);
+  border-radius: 4px;
+  font-size: 18px;
+
+  border-top: 2px solid grey;
+  border-left: 2px solid grey;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+}

@@ -94,5 +94,6 @@ body {
 @media (min-width: 1440px) {
   .trailer-container video {
     width: 1000px;
+    
   }
 }
