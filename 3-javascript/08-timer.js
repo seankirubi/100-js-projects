@@ -46,7 +46,8 @@ startEl.addEventListener("click", () => {
 
   console.log(startEl); 
   console.log('start button clicked')
-})
+}
+)
 stopEl.addEventListener("click", () => {
   stopEl.disabled = true;
   startEl.disabled = false;
